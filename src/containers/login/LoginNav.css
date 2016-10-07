@@ -1,0 +1,33 @@
+
+.navbar.navbar-absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 1030;
+}
+.navbar-transparent {
+    padding-top: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+}
+.navbar {
+    border: 0;
+    font-size: 16px;
+    border-radius: 0;
+}
+body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, .alert, a, .td-name, td, button.close {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+}
+.navbar-transparent .navbar-brand, [class*="navbar-ct"] .navbar-brand {
+    color: #FFFFFF;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+.navbar .navbar-brand {
+    font-weight: 400;
+    margin: 7px 0px;
+    padding: 15px 15px;
+    font-size: 20px;
+}

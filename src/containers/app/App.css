@@ -1,0 +1,23 @@
+@media (min-width: 992px){
+  .sidebar-mini .sidebar, .sidebar-mini .main-panel {
+      overflow: visible;
+      max-height: none;
+      height: auto;
+  }
+  .sidebar-mini .wrapper {
+    height: auto;
+  }
+  .sidebar-mini .main-panel {
+      width: calc(100% - 80px);
+      margin-left: 80px;
+  }
+}
+.wrapper {
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+body, .wrapper {
+    min-height: 100vh;
+    position: relative;
+}

@@ -1,0 +1,50 @@
+@media (min-width: 992px){
+  .sidebar-mini .sidebar .logo {
+      display: none;
+  }
+}
+.sidebar .logo, .bootstrap-navbar .logo {
+    padding: 10px 15px;
+    position: relative;
+    z-index: 4;
+}
+
+.sidebar .logo .logo-text, .bootstrap-navbar .logo .logo-text {
+    text-transform: uppercase;
+    padding: 7px 0px;
+    display: block;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@media (min-width: 992px){
+  .sidebar-mini .sidebar .logo-mini {
+      padding: 10px 0px;
+      display: block;
+      margin: 0px;
+      position: relative;
+      z-index: 4;
+  }
+  .sidebar-mini .sidebar .logo-mini:before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+.sidebar .logo:before, .bootstrap-navbar .logo:before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
