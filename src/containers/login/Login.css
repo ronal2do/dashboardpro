@@ -13,6 +13,10 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
     height: auto;
     min-height: 100vh;
 }
+.full-page:before {
+    opacity: .33;
+    background: #000000;
+}
 .wrapper {
     position: relative;
     top: 0;

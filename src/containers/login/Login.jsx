@@ -2,28 +2,47 @@ import React, { Component } from 'react';
 
 import LoginNav from './LoginNav';
 import LoginForm from './LoginForm';
+import Register from './Register';
 
 import background from '../../media/full-screen-image-3.jpg';
 
 import './Login.css';
 
 export default class Login extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      login: true
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState({
+      login: !this.state.login
+    });
+  }
+
+
   render() {
+    const loginForm = this.state.login ? <LoginForm /> : <Register />;
+
     return (
       <div>
         <LoginNav />
           <div className="wrapper wrapper-full-page">
             <div className="full-page login-page" data-color="red" data-image={background}>
               <div className="content">
-                  <div className="container">
-                      <div className="row">
-                          <div className="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                            <LoginForm />
+                <div className="text-center">
+                  <button onClick={this.handleClick}>trocar (depois colocar um swith)</button>
+                </div>
+                <div className="container" style={{paddingTop:'20px'}}>
+                  {loginForm}
+                </div>
 
-                          </div>
-                      </div>
-                  </div>
               </div>
+
           	<footer className="footer footer-transparent">
                   <div className="container">
                       <nav className="pull-left">
